@@ -43,7 +43,7 @@ function App(props) {
   const handleMajorChange = (event) => {
     setMajorValue(event.target.value);
   }
-  const wordsLength = firstNameValue.length > 1 && lastNameValue.length > 1 && gradValue.length > 4 && majorValue.length > 1;
+  const wordsLength = firstNameValue.length > 1 && lastNameValue.length > 1 && gradValue.length > 1 && majorValue.length > 1;
   const validTime = (gymLocation == 'AFC' && timeAttend != '912AM') || (gymLocation == 'Skyline' && timeAttend != '69AM' && timeAttend != '912PM') || (gymLocation == 'RAC');
 
   return (
