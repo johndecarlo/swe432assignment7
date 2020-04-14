@@ -48,6 +48,7 @@ function App(props) {
 
   return (
     <div style={{flexGrow: 1}}>
+      <form action="https://swe432assign7.herokuapp.com/result">
       <Grid container direction="column" justify="center" alignItems="center" spacing={2}>
         <Grid item xs>
           <React.Fragment>
@@ -85,11 +86,10 @@ function App(props) {
           <ExperienceButtons value={experience} onChange = {setExperience}/>
         </Grid>
         <Grid item xs>
-          <Link to="/result">
-            <Button disabled={!wordsLength || !validTime} variant="contained" color="primary" data-something="submit">Submit</Button>
-          </Link>
+            <Button disabled={!wordsLength || !validTime} type="submit" value="Submit" variant="contained" color="primary">Submit</Button>
         </Grid>
       </Grid>
+      </form>
     </div>
   );
 }
